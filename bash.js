@@ -6,6 +6,12 @@ process.stdin.on('data', data => {
     let output = require('./pwd');
     output();
   }
+
+  if(cmd === 'ls'){
+    let output = require('./ls')
+    output()
+  }
+
   //process.stdout.write(cmd);
-  process.stdout.write('\npromt > ');
+  process.stdout.write('\nprompt > ');
 });
